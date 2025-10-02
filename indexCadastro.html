@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRO</title>
 </head>
 <h2>CADASTRO</h2>
+
 <body>
-    <form action="/action_page.php">
-        <label for="cnome">Nome Completo:</label><br>
-        <input type="text" id="cnome" name="cnome" value=""><br><br>
-        <label for="endereco">Endereço:</label><br>
-        <input type="text" id="endereco" name="endereco" value=""><br><br>
-        <label for="cep">CEP:</label><br>
-        <input type="number" id="cep" name="cep" value="CEP"><br><br>
-        <label for="Telefone">Telefone:</label><br>
-        <input type="tel" id="Telefone" name="Telefone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}"><br><br>
-        <label for="cpf">CPF:</label><br>
-        <input type="number" id="cpf" name="cpf" value="CPF" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}"><br><br>
-        <label for="email"> Email:</label><br>
-        <input type="email" id="email" name="email" value=""><br><br>
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" value=""><br>
-        <h4 class="def_cab_senha">A senha deve conter:</h4>
-        <p class="def_senha">- Ao menos uma letra maiúscula e uma minúscula</p>
-        <p class="def_senha">- Ao menos um número</p>
-        <p class="def_senha">- Ao menos um caractere especial</p>
-        <label for="repetir_senha">Repita a Senha:</label><br>
-        <input type="password" id="repetir_senha" name="repetir_senha" value=""><br>
-        <input type="checkbox" id="mostrar_senha" name="mostrar_senha" value="Mostrar Senha">
-        <label for="mostrar_senha"> Mostrar Senhas</label><br><br><br>
-        <input type="submit" value="Cadastrar">
-      </form>
+    <fieldset>
+        <form action="/action_page.php">
+            <label for="cnome">Nome Completo:</label><br>
+            <input type="text" id="cnome" name="cnome" value=""><br><br>
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco" value=""><br><br>
+            <label for="cep">CEP:</label><br>
+            <input type="number" id="cep" name="cep" value="CEP"><br><br>
+            <label for="Telefone">Telefone:</label><br>
+            <input type="tel" id="Telefone" name="Telefone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}"><br><br>
+            <label for="cpf">CPF:</label><br>
+            <input type="number" id="cpf" name="cpf" value="CPF" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}"><br><br>
+            <label for="email"> Email:</label><br>
+            <input type="email" id="email" name="email" value=""><br><br>
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" value=""><br>
+            <i>
+                <p class="def_cab_senha">A senha deve conter:</p>
+                <p class="def_senha">- Ao menos uma letra maiúscula e uma minúscula</p>
+                <p class="def_senha">- Ao menos um número</p>
+                <p class="def_senha">- Ao menos um caractere especial</p>
+            </i>
+            <label for="repetir_senha">Repita a Senha:</label><br>
+            <input type="password" id="repetir_senha" name="repetir_senha" value=""><br>
+            <input type="checkbox" id="mostrar_senha" name="mostrar_senha" value="Mostrar Senha">
+            <label for="mostrar_senha"> Mostrar Senhas</label><br><br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
 </body>
+
 </html>
